@@ -10,9 +10,9 @@ function greeting(greet){
                   though.*/  
 }
 //alert('Hello World!') is one way to print out the functions when calling her
-console.log('Hello World'); //Another way to execute the command
-document.write('Hello World'); //Another way to execute the command
-let x = document.getElementById('greeting').innerHTML = 'Hello World!'; //Executing command
+//console.log('Hello World');//Another way to execute the command
+//document.write('Hello World');//Another way to execute the command
+let x = document.getElementById('greeting').innerHTML = 'Hello World!';//Executing command
 
 
 //Function with 2 numbers. Parameters declared ( )
@@ -25,9 +25,19 @@ el.textContent = getArea(5, 5);
 
 
 //This is a function expression
-let area = function (width1, height1){ //Function declared as anonymous. Names is omitted
+let area = function (width1, height1){ //Function declared as anonymous. Names is omitted.
     return width1 * height1; //Function expression cant be called earlier before the 
-                            //the interpreter gets to her
+                            //the interpreter finds her
 };
-let size = area(6, 6);
-let x1 = document.getElementById('area1').innerHTML = size;    
+let size = area(6, 6); //Automatically these values are assigned to the parametrs of function
+let x1 = document.getElementById('area1').innerHTML = size;
+document.write(size); 
+
+
+
+
+
+
+                    
+                                                        
+
