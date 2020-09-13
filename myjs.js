@@ -33,7 +33,7 @@ let size = area(6, 6); //Automatically these values are assigned to the parametr
 let x1 = document.getElementById('area1').innerHTML = size;
 document.write(size); 
 
-//Function with the greater operator comparison 
+//Function with the greater > operator comparison 
 function greaterThan(val){
     if(val > 100){
         return "Number is greater than 100";
@@ -46,9 +46,18 @@ function greaterThan(val){
 greaterThan(10);
 document.write();
 
+//If Else statement
+function hello(val){
+    var result = " ";
 
-
-
+    if (val > 10){
+        result = "val is bigger";
+    } else {
+        result = " val is smaller";
+    }
+    return result;
+}
+    hello(5);
                     
                                                         
 
