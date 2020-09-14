@@ -49,7 +49,6 @@ document.write();
 //Function if-else
 function hello(val){
     var result = " ";
-
     if (val > 10){
         return "Val is greater than 10";
     } else {
@@ -70,9 +69,8 @@ function hi(val){
 }
 console.log(hi(10));
 
-//Function if-Else
+//Function if-else
 function xxx(numb){
-    
     if (numb > 10){
         return numb * 10;
     } else {
