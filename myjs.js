@@ -46,18 +46,39 @@ function greaterThan(val){
 greaterThan(10);
 document.write();
 
-//If Else statement
+//Function if-else
 function hello(val){
     var result = " ";
 
     if (val > 10){
-        result = "val is bigger";
+        return "Val is greater than 10";
     } else {
-        result = " val is smaller";
+        return "Val is smaller than 10";
     }
     return result;
 }
-    hello(5);
-                    
-                                                        
+console.log(hello(20));
+    
 
+//Function if-else
+function hi(val){
+    if (val > 5 ){
+        return val * 5;
+    } else {
+        return val * 10;
+    }
+}
+console.log(hi(10));
+
+//Function if-Else
+function xxx(numb){
+    
+    if (numb > 10){
+        return numb * 10;
+    } else {
+        return numb / 10;
+    }
+}
+console.log(xxx(50));
+
+                                                    
