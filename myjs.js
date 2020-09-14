@@ -79,4 +79,12 @@ function xxx(numb){
 }
 console.log(xxx(50));
 
+//Function === comparison. Three === means strictly equal
+function compar(comp){
+    if (comp == "3"){
+        return comp;
+    }
+}
+console.log(compar("3"));
+
                                                     
