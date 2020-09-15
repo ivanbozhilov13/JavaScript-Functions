@@ -160,3 +160,46 @@ function golfScore(par, strokes){
     }
 }
 console.log(golfScore(5,4));
+
+//Function with switch statement
+function caseInSwtich(val){
+    switch(val){
+        case 1:
+            return 'alpha';
+            break;
+        
+        case 2:
+            return 'beta';
+            break;
+
+        case 3:
+            return 'gamma';
+
+        case 4:
+            return 'delta';
+            break;
+    }
+}
+console.log(caseInSwtich(1));
+
+//Multiple identical Switch Statements
+function sequentialSizes(val){
+    switch(val){
+        case 1:
+        case 2:
+        case 3:
+            return "Low";
+
+        case 4:
+        case 5:
+        case 6:
+            return "Middle";
+
+        case 7:
+        case 8:
+        case 9:
+            return "High";
+    }
+}
+sequentialSizes(1);
+console.log(sequentialSizes(1));
