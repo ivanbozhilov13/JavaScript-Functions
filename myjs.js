@@ -203,3 +203,14 @@ function sequentialSizes(val){
 }
 sequentialSizes(1);
 console.log(sequentialSizes(1));
+
+//Checking for a property in an Object
+function checkForProp(obj, checkProp){
+    checkForProp = {
+        car: 'Mercedes',
+        dress: 'Versace',
+        age: 30
+    };
+    return Mercedes;
+}
+console.log(checkForProp.hasOwnProperty('car'));
