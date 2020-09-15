@@ -79,7 +79,7 @@ function xxx(numb){
 }
 console.log(xxx(50));
 
-//Function === comparison. Three === means strictly equal
+//Function === comparison. Three === means strictly equal so of the exact same type
 function compar(comp){
     if (comp == "3"){
         return comp;
@@ -87,4 +87,76 @@ function compar(comp){
 }
 console.log(compar("3"));
 
-                                                    
+//Function comparison ==
+function compar1(comp1){
+    if (comp1 == 5){
+        return comp1;
+    }
+}
+console.log(compar1("5"));
+
+function compar2(comp2){
+    if (comp2 == "5"){
+        return comp2;
+    }
+}
+console.log(compar2("5"));
+
+//Function else-if: used for multiple conditions to test
+function testElseIf(val){
+    if (val > 10){
+        return "Bigger than 10";
+    } else if (val < 10){
+        return "Smaller than 10";
+    } else {
+        return "Value is betweem 10 & 5"
+    }
+}
+console.log(testElseIf(7));
+
+//Multiple if-else statements
+function testSize(num){
+    if (num < 5){
+        return "Tiny";
+    }
+    else if(num < 15){
+        return "Medium";
+    }
+    else if (num < 20){
+        return "Large";
+    }
+    else if (num >= 20){
+        return "Huge";
+    }
+    return "Change me";
+}
+console.log(testSize(7));
+
+//Golf Game with par and strokes
+var names = ["Hole-in-one!", "Eagle","Birdie","Par"
+,"Bogey", "Double Bogey","Go home!"];
+
+function golfScore(par, strokes){
+    if (strokes == 1){
+        return "Hole-in-one!";
+    }
+    else if (strokes <= -2){
+        return "Eagle";
+    }
+    else if (strokes == par -1){
+        return "Birdie";
+    }
+    else if (strokes == par){
+        return "Par";
+    }
+    else if (strokes == par +1){
+        return "Bogey";
+    }
+    else if (strokes == par + 2){
+        return "Double Bogey";
+    }
+    else if (stokes >= par +3){
+        return "Go Home!";
+    }
+}
+console.log(golfScore(5,4));
