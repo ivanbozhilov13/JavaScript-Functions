@@ -227,5 +227,6 @@ function greaterNum(num1, num2){
         return "Num2 is greater than num1";
     }
 }
+//asdasdasdadas
 console.log(greaterNum(10, 5));
 console.log(greaterNum(50, 100));
