@@ -214,3 +214,18 @@ function checkForProp(obj, checkProp){
     return Mercedes;
 }
 console.log(checkForProp.hasOwnProperty('car'));
+
+/*Write a function named greaterNum that:
+takes 2 arguments, both numbers.
+returns whichever number is the greater (higher) number.
+Call that function 2 times with different number pairs, 
+and log the output to make sure it works (e.g. "The greater number of 5 and 10 is 10.").*/
+function greaterNum(num1, num2){
+    if (num1 > num2){
+        return "The greater number of 5 and 10 is 10";
+    } else if (num1 < num2) {
+        return "Num2 is greater than num1";
+    }
+}
+console.log(greaterNum(10, 5));
+console.log(greaterNum(50, 100));
