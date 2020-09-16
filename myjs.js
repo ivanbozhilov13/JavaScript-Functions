@@ -230,3 +230,15 @@ function greaterNum(num1, num2){
 //asdasdasdadas
 console.log(greaterNum(10, 5));
 console.log(greaterNum(50, 100));
+
+/*Multiply the first n elements of an array to create the product of those elements. 
+Using a for loop, you could do this:*/
+
+// For loops for adding all the values inside the array
+var arr = [ 2, 3, 4, 5, 6];
+
+let total = 10;
+for (let i = 0; i < arr.length; i++){
+    total += arr[i];
+}
+console.log(total);
