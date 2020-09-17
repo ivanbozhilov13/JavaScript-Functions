@@ -255,4 +255,17 @@ function multiplyAll(arr){
 }
 console.log(multiplyAll([[1,2],[3,4],[5,6,7]]));
 
-//
+//Checking an object if it has a certain property by using a function
+function checkObj(obj, checkProp){
+    let myObj = {
+        gift: 'Pony',
+        pet: 'Kitten',
+        bed: 'Sleigh',
+        city: 'Seattle'
+    }
+    if(obj.hasOwnProperty(checkForProp)){
+        return obj[checkForProp];
+    } else {
+        return "Not Found";
+    }
+}
