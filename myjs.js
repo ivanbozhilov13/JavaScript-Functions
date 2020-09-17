@@ -269,3 +269,28 @@ function checkObj(obj, checkProp){
         return "Not Found";
     }
 }
+
+/*Change the code so that all variables are declared using let or const. 
+Use let when you want the variable to change, 
+and const when you want the variable to remain constant. 
+Also, rename variables declared with const to conform to common practices, 
+meaning constants should be in all caps.*/
+function printManyTimes(str) {
+    "use strict";
+    
+    const SENTENCE = str + " is cool!";
+    for (let i = 0; i < str.length; i+=2) {
+      console.log(SENTENCE);
+    }
+  
+    // Only change code above this line
+ }
+  printManyTimes("freeCodeCamp");
+  
+//Example of a arrow function 
+const elem = (arr1, arr2) => {
+    "strict mode"
+    return arr1.concat(arr2);
+}
+console.log(elem([1,2], [10,20,30]));
+
