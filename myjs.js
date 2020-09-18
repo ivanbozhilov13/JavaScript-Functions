@@ -294,3 +294,33 @@ const elem = (arr1, arr2) => {
 }
 console.log(elem([1,2], [10,20,30]));
 
+
+const arr7 = [6, 89, 3, 45];
+const maximus = [...arr7];
+console.log(maximus);
+
+const HIGH_TEMPERATURES = {
+    today: 20,
+    yesterday: 30,
+    tomorrow: 40
+}
+const {today, yesterday} = HIGH_TEMPERATURES;
+/*The variable above represents the same values as below
+but written in easier manner to read and understand.
+const today = HIGH_TEMPERATURES.today;
+const yesterday = HIGH_TEMPERATURES.yesterday;
+const tomorrow = HIGH_TEMPERATURES. tomorrow;*/
+console.log(today, yesterday);
+
+//Different examples
+let array = [[10, 40], [40, 66], [77, 900], [43, 123]];
+
+array[0][1] = 99;
+console.log(array[0]);
+
+
+    
+    
+
+
+
