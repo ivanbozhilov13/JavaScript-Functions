@@ -52,3 +52,10 @@ function getArea(){
     return width * height;
 }
 console.log(getArea(5,5));
+
+//Printing the last element of an array
+var arrayExample = [3,4,5,'hello','whatever'];
+function theLastOne(arr) {
+    return arr[arr.length - 1];
+ }
+ console.log(theLastOne(arrayExample))
