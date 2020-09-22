@@ -192,7 +192,14 @@ let firsLetter = '';
 let name = 'Ivan';
 firsLetter = name[0];
 console.log(firsLetter);
-
 let first = 'Ivan'
 let last = first[first.length-1];
 console.log(last);
+
+//
+function addFive(){
+    let sum = 0;
+    sum += 5;
+    return sum;
+}
+addFive(10);
