@@ -177,3 +177,22 @@ function pluralize(noun, number){
 }
 console.log(pluralize('dog', 2));
 console.log(pluralize('cat', 1));
+
+//
+let sale = true;
+if (sale){
+    console.log('Time to Buy!');
+}
+sale = false;
+if(sale){
+    console.log('You need more money!');
+}
+
+let firsLetter = '';
+let name = 'Ivan';
+firsLetter = name[0];
+console.log(firsLetter);
+
+let first = 'Ivan'
+let last = first[first.length-1];
+console.log(last);
