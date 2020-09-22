@@ -203,3 +203,9 @@ function addFive(){
     return sum;
 }
 addFive(10);
+
+//ES6 
+let vals = [5, 9, 2, 4, 8, 20, 23];
+vals = vals.filter(x => x % 2 === 0); //This is ES6 syntax. Shorter more precise and easier to read
+console.log(vals); 
+
