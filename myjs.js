@@ -278,4 +278,66 @@ function switchOff(val){
 console.log(switchOff(3))  //Testing one of the cases
 console.log(switchOff(5)); //Testing the default statement. Workd as else in if...else
 
+//Switch statement. Cases can be Strings as well, not only numbers
+function chainToSwitch(val) {
+    var answer = "";
+      switch(val) {
+      case 'bob':
+      answer = "Marley";
+      break;
+      
+      case 42:
+      answer = "The Answer";
+      break;
+  
+      case 1:
+      answer = "There is no #1";
+      break;
+    
+      case 99:
+      answer = "Missed me by this much!";
+      break;
+  
+      default:
+      answer = "Ate Nine";
+      break;
+    }
+    // Only change code above this line
+    return answer;
+  }
+  console.log(chainToSwitch('bob'));
+  console.log(chainToSwitch(3));
+  
+//Counting card BlackJack function
+let count = 0;
+function cards(card){
+    switch(card){
+        case 1:
+        case 2:   
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+        count++;
+        break;
+        case 7:
+        case 8:
+        case 9:
+        count + 0;
+        break;
+        case 10:
+        case 'J':
+        case 'Q':
+        case 'K':
+        case 'A':
+        count--;
+        break;
+    }
+    if( count > 0){
+        return count + " " + 'Bet!';
+    }   else {
+        return count + " " + 'Hold!';
+    }
+}
+console.log(cards('j'));
 
