@@ -1,4 +1,3 @@
-
 /*Functions are core arguments in JS. 
 Declare a Function. Paramaters*/
 function hello(){
@@ -6,6 +5,7 @@ function hello(){
 }
 hello(); //On this line we call the function to execute
 
+//Function with tho parameters passed inside
 function getArea(width, height){
     let result = width * height;
     return result;
@@ -54,7 +54,7 @@ function getArea(){
 }
 console.log(getArea(5,5));
 
-//Printing the last element of an array
+//Printing the first element of an array
 let myAlphabet = ['A', 'B', 'C', 'D','E','F', 'G'];
 let firstItem = myAlphabet[0];
 console.log(firstItem);
@@ -78,7 +78,7 @@ const companies = [
     console.log(companies);
   });
 
-  //f
+  //Usind arrow function. Just one line of code
   let array = [
       'hello',
       'neverever',
@@ -88,7 +88,7 @@ const companies = [
   ];
   console.log(array.map(array => array.length));
 
-  //
+  //Logging all the prices of the smartphones
   const smartPhones = [
     { name:'iphone', price:649 },
     { name:'Galaxy S6', price:576 },
@@ -114,7 +114,7 @@ let variable = items.find((item) => {
 });
 console.log(variable);
 
-//
+//Comparing two arguments
 function compareIntegers(num1, num2){
     if(num1 > num2){
         return console.log(`bigger than 20`);
@@ -178,34 +178,85 @@ function pluralize(noun, number){
 console.log(pluralize('dog', 2));
 console.log(pluralize('cat', 1));
 
-//
-let sale = true;
-if (sale){
-    console.log('Time to Buy!');
-}
-sale = false;
-if(sale){
-    console.log('You need more money!');
-}
-
-let firsLetter = '';
-let name = 'Ivan';
-firsLetter = name[0];
-console.log(firsLetter);
-let first = 'Ivan'
-let last = first[first.length-1];
-console.log(last);
-
-//
-function addFive(){
-    let sum = 0;
-    sum += 5;
-    return sum;
-}
-addFive(10);
-
 //ES6 
 let vals = [5, 9, 2, 4, 8, 20, 23];
 vals = vals.filter(x => x % 2 === 0); //This is ES6 syntax. Shorter more precise and easier to read
 console.log(vals); 
+
+
+//Removing duplicates using new Set()
+let arr = [1,1,1,2,2,3,4,5,5,7];
+console.log(new Set(arr));
+
+//Using for loop to remove duplicates
+let a = [1,1,1,2,2,3,4,5,5,7];
+let b = [];
+let len = a.length;
+
+for(let i = 0; i < len; i++){
+    if(b.indexOf(a[i]) === -1){
+        b.push(a[i]);
+    }
+}
+console.log(b);
+
+/*Game of Golf with conditional statements. Complete the function using conditionals 
+so that to every strokes corresponds a string:
+Strokes	Return:
+1	"Hole-in-one!"
+<= par - 2	"Eagle"
+par - 1	"Birdie"
+par	"Par"
+par + 1	"Bogey"
+par + 2	"Double Bogey"
+>= par + 3	"Go Home!"*/
+var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+
+//We can use an else...if conditional 
+function golfScore(par, strokes) {
+    if (strokes === 1){
+        return 'Hole in one!';
+    }
+    else if (strokes <= par - 2){
+        return 'Eagle';
+    }
+    else if (strokes === par  - 1){
+        return 'Birdie';
+    }
+    else if (strokes === par){
+        return 'Par';
+    }
+    else if (strokes === par + 1){
+        return 'Bogey';
+    }
+    else if (strokes === par +2){
+        return 'Double Bogey';
+    }
+    else if (strokes >= par + 3){
+        return 'Go Home!'
+    }
+}   
+console.log(golfScore(5,4)); //Trying different values to check if the function works
+console.log(golfScore(2, 4)); //Same as above
+console.log(golfScore(1,1));  //Same as above
+
+//Switch statement
+function caseInSwitch(val){ //We are switching the value inside to check which one matches
+    let answer = "";
+    switch(val){
+        case 1: answer = 'alpha';
+        break;
+        case 2: answer = 'beta';
+        break;
+        case 3: answer = 'gamma';
+        break;
+        case 4: answer = 'delta';
+        break;
+    }
+    return answer;
+}
+console.log(caseInSwitch(1)); //Testing different values to see which what the programm logs
+console.log(caseInSwitch(4));
+console.log(caseInSwitch(3));
+
 
