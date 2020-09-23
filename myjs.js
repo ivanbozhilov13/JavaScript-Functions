@@ -260,3 +260,22 @@ console.log(caseInSwitch(4));
 console.log(caseInSwitch(3));
 
 
+//Switch statement
+function switchOff(val){
+    let answer = "";
+    switch(val){
+        case 1: answer = 'apple';
+        break;
+        case 2: answer = 'bird';
+        break;
+        case 3: answer = 'cat';
+        break;
+        default: answer = 'stuff';
+        break;
+    }
+    return answer;
+}
+console.log(switchOff(3))  //Testing one of the cases
+console.log(switchOff(5)); //Testing the default statement. Workd as else in if...else
+
+
