@@ -341,3 +341,28 @@ function cards(card){
 }
 console.log(cards('j'));
 
+//Object literal
+//const Book1 = {
+   // title: 'Book one',
+    //author: 'John Doe',
+   // year: '2013',
+    //getSummary: function(){
+        //return `${this.title} was written by ${this.author} in ${this.year  }`;
+//}
+//}
+//console.log(Book1.getSummary());
+
+
+//Constructor 
+function Book(title, author, year){
+    this.title = title;
+    this.author = author;
+    this.year = year;
+}
+
+//Instatiating the object
+const book1 = new Book('Book1', 'John Doe', 2013);
+const book2 = new Book('Book2', 'Jane Doe', 2016);
+// console.log(book1.year);
+
+    
