@@ -60,4 +60,27 @@ console.log(isSameNum(10, 10));
 console.log(isSameNum(10, '10'));
 
 //
+function oddOrEven(s){
+    let len = s.length;
+    if(len % 2 === 0){
+        return true;
+    }   else if (len % 2 === 1) {
+        return false;
+    }
+    }
+    console.log(oddOrEven('apples'));
+    console.log(oddOrEven('pears'));
+    console.log(oddOrEven('cherry'));
 
+//Check if a String is empty or not using a function
+function isEmpty(word) {
+    return word === "";
+    //return word.length === 0;
+    //return !word;
+    /*return if(word ==== ""){
+        return true;
+    } else if (word !== ""){
+        return false
+        */
+    }
+console.log(isEmpty(""));
