@@ -107,10 +107,14 @@ console.log(myObj.hasOwnProperty('gift')); //This method return either true or f
 
 //
 // Setup
-var myArray = [];
+function multiplyAll(arr) {
+    var product = 1;
 
-//
-
+    for(let i = 0; i < arr.length; i++){
+        
+    }
+  
+  //console.log(multiplyAll([[1,2],[3,4],[5,6,7]]));
   
 
     
