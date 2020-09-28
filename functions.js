@@ -84,3 +84,33 @@ function isEmpty(word) {
         */
     }
 console.log(isEmpty(""));
+
+/*The object is decalred outside the function which means that it has a global scope
+and can be accessed by console.log. In the case scneario of being inside the function then 
+it cant be found and it otuputs udefined.*/
+let myObj = {
+    gift: 'pony',
+    pet: 'kitten',
+    bed: 'sleigh',
+    city: 'Seattle'
+};  
+function checkObj(obj, checkProp) {
+    if(myObj.hasOwnProperty(checkProp)){
+        return myObj[checkProp];
+    }
+    else {
+        return "Not found";
+    }
+    }
+console.log(myObj.hasOwnProperty('gift')); //This method return either true or false
+//console.log(myObj.hasOwnProperty('gift'));
+
+//
+// Setup
+var myArray = [];
+
+//
+
+  
+
+    
