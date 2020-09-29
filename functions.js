@@ -14,27 +14,6 @@ function example(firstOne, lastOne){
 console.log(example());
 
 //
-function equalityCheck(a, b){
-    let equality = a === b;
-    return equality;
-}
-console.log(equalityCheck(1, true)); //Output: true
-console.log(equalityCheck(0, "0")); //Output: false. Second 0 is a String
-console.log(equalityCheck(1, 1)); //Output: false  
-
-//Same function as above but done with if...else statement
-function equalityCheck2(a, b){
-    if(typeof(a) === typeof(b)){
-        return true;
-    }  else if (typeof(a) !== typeof(b)){
-        return false;
-    }
-}
-console.log(equalityCheck(1, true)); //Output: true
-console.log(equalityCheck(0, "0")); //Output: false. Second 0 is a String
-console.log(equalityCheck(1, 1));
-
-//
 function profitableGamble(prob, size, pay){
     if(prob * size > pay){
         return true;
@@ -72,19 +51,6 @@ function oddOrEven(s){
     console.log(oddOrEven('pears'));
     console.log(oddOrEven('cherry'));
 
-//Check if a String is empty or not using a function
-function isEmpty(word) {
-    return word === "";
-    //return word.length === 0;
-    //return !word;
-    /*return if(word ==== ""){
-        return true;
-    } else if (word !== ""){
-        return false
-        */
-    }
-console.log(isEmpty(""));
-
 /*The object is decalred outside the function which means that it has a global scope
 and can be accessed by console.log. In the case scneario of being inside the function then 
 it cant be found and it otuputs udefined.*/
@@ -104,17 +70,62 @@ function checkObj(obj, checkProp) {
     }
 console.log(myObj.hasOwnProperty('gift')); //This method return either true or false
 //console.log(myObj.hasOwnProperty('gift'));
-
-//
 // Setup
-function multiplyAll(arr) {
-    var product = 1;
-
-    for(let i = 0; i < arr.length; i++){
-        
+var contacts = [
+    {
+        "firstName": "Akira",
+        "lastName": "Laine",
+        "number": "0543236543",
+        "likes": ["Pizza", "Coding", "Brownie Points"]
+    },
+    {
+        "firstName": "Harry",
+        "lastName": "Potter",
+        "number": "0994372684",
+        "likes": ["Hogwarts", "Magic", "Hagrid"]
+    },
+    {
+        "firstName": "Sherlock",
+        "lastName": "Holmes",
+        "number": "0487345643",
+        "likes": ["Intriguing Cases", "Violin"]
+    },
+    {
+        "firstName": "Kristian",
+        "lastName": "Vos",
+        "number": "unknown",
+        "likes": ["JavaScript", "Gaming", "Foxes"]
     }
-  
-  //console.log(multiplyAll([[1,2],[3,4],[5,6,7]]));
+];
+function lookUpProfile(name, prop){
+    for (let i = 0; i < contacts.length; i++){
+        if (contacts[i].firstName === name){
+            if (contacts[i].hasOwnProperty(prop)){
+                return contacts[i][prop];
+            }   else {
+                return "No such contact";
+            }
+        }
+    }
+    return 'No such property';
+}
+console.log(lookUpProfile("Akira", "likes"));
+
+//function
+function randomNumber(num){
+    "use strict";
+    return Math.floor(Math.random() * 10);
+}
+console.log(randomNumber());
+
+//Spread operator from ES6 ...
+let arr = [1,2,3,4,5,6];
+let arr2 = [...arr];
+console.log(arr2);
+
+   
   
 
-    
+
+  
+
