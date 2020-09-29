@@ -118,13 +118,31 @@ function randomNumber(num){
 }
 console.log(randomNumber());
 
-//Spread operator from ES6 ...
+//Spread operator from ES6 ... In this example we use to copy effectively the values from arr to arr2
 let arr = [1,2,3,4,5,6];
 let arr2 = [...arr];
 console.log(arr2);
 
-   
-  
+//
+
+
+
+//ES6 Function with three arguments passed to it
+const createPerson = (name, age, gender) => ({name, age, gender});
+   "use strict";
+    console.log(createPerson("Zodiac Hasbro", 56, "male"));
+
+//ES6 Arrow function with two arguments inside the brackets.
+const len = (num1) => num1 % 2 === 1;
+console.log(len(9));   
+
+
+
+
+
+
+
+
 
 
   
