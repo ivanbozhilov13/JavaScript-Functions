@@ -62,10 +62,28 @@ const createPerson = (name, age, gender) => ({name, age, gender});
 const len = (num1) => num1 % 2 === 1;
 console.log(len(9));   
 
+const makePair = (num1, num2) => [num1, num2];
+console.log(makePair(1, 2));
 
 
 
+function absolute(n) {
+	if(n < 0){
+		return n * -1;
+	}	
+	else {
+		return n * 1;
+	}
+	}
+console.log(absolute(-5)); //Output: +5
+console.log(absolute(-3.14));  //Output: 3.14
+console.log(absolute(250)); //Output: 250
 
+//Double arguments ES6 to check for legal age to drink alcohol beverages
+const shouldServeDrinks = (age, onBreak) => age >=18 && onBreak === false;
+console.log(shouldServeDrinks(17, true));
+console.log(shouldServeDrinks(20, false));
+console.log(shouldServeDrinks(17, true));
 
 
 
