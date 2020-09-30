@@ -95,6 +95,13 @@ console.log(reverseArr([1, 2, 3, 4]));
 const reverseArr1 = (arr1) => arr1.reverse();
 console.log(reverseArr([5, 6, 7, 8]));
 
+//
+function concatName(firstName, lastName){
+  return `${firstName}, ${lastName}`;  
+  }
+console.log(concatName("First", "Last"));
+
+
 
 
   

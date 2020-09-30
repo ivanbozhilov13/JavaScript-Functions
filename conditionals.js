@@ -58,7 +58,7 @@ function checkObj(obj, checkProp) {
 console.log(myObj.hasOwnProperty('gift')); //This method return either true or false
 
 //
-function lookUpProfile(name, prop){
+/*function lookUpProfile(name, prop){
     for (let i = 0; i < contacts.length; i++){
         if (contacts[i].firstName === name){
             if (contacts[i].hasOwnProperty(prop)){
@@ -70,4 +70,10 @@ function lookUpProfile(name, prop){
     }
     return 'No such property';
 }
-console.log(lookUpProfile("Akira", "likes"));
+console.log(lookUpProfile("Akira", "likes"));*/
+
+//Ternary operator ? More compact and easily readable than multiple if...else statements
+function operator(is_nice){
+     return is_nice ? 'good' : 'not so good';
+}
+console.log(operator('not good',));
