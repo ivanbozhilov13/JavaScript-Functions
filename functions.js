@@ -80,12 +80,20 @@ console.log(absolute(-3.14));  //Output: 3.14
 console.log(absolute(250)); //Output: 250
 
 //Double arguments ES6 to check for legal age to drink alcohol beverages
-const shouldServeDrinks = (age, onBreak) => age >=18 && onBreak === false;
+const shouldServeDrinks = (age, onBreak) => age >=18 && !onBreak;
 console.log(shouldServeDrinks(17, true));
 console.log(shouldServeDrinks(20, false));
 console.log(shouldServeDrinks(17, true));
 
+//Reverse Array usind array.reverse() method
+function reverseArr(arr){
+    return arr.reverse();
+}
+console.log(reverseArr([1, 2, 3, 4]));
 
+//ES6
+const reverseArr1 = (arr1) => arr1.reverse();
+console.log(reverseArr([5, 6, 7, 8]));
 
 
 
