@@ -1,4 +1,4 @@
-//Functions in JS. Both ES5 and ES6
+//Functions in JS. ES5
 function hello(){
     console.log('Hello World!'); //The output we expect and want to the console
 }
@@ -38,7 +38,7 @@ function isSameNum(num1, num2){
 console.log(isSameNum(10, 10));
 console.log(isSameNum(10, '10'));
 
-//
+//Counting whether is even or odd
 function oddOrEven(s){
     let len = s.length;
     if(len % 2 === 0){
@@ -69,7 +69,7 @@ function checkObj(obj, checkProp) {
     }
     }
 console.log(myObj.hasOwnProperty('gift')); //This method return either true or false
-//console.log(myObj.hasOwnProperty('gift'));
+
 // Setup
 var contacts = [
     {
@@ -118,14 +118,10 @@ function randomNumber(num){
 }
 console.log(randomNumber());
 
-//Spread operator from ES6 ... In this example we use to copy effectively the values from arr to arr2
+//ES6 Spread operator... In this example we use to copy effectively the values from arr to arr2
 let arr = [1,2,3,4,5,6];
 let arr2 = [...arr];
 console.log(arr2);
-
-//
-
-
 
 //ES6 Function with three arguments passed to it
 const createPerson = (name, age, gender) => ({name, age, gender});
